@@ -39,7 +39,7 @@ let markuprules = {
     "__": "u",
     "--": "s",
     "~~": "i",
-    "###": "font style='animation: rainbow 3s infinite;'",
+    "$r$": "font style='animation: rainbow 3s infinite;'",
     "^^": "font size=5",
     "%%": "marquee scrollamount=6",
 }
@@ -153,7 +153,7 @@ module.exports.commands = {
 			if(item.type == 0) fact.push({type: 0, text: tags(item.text, user), say: item.say != undefined ? tags(item.say, user) : undefined});
 			else fact.push(item);
 		})
-		fact.push({type: 0, text: "o gee whilickers wasn't that sure interesting huh"});
+		fact.push({type: 0, text: "o gee whilickers! wasn't that sure! interesting huh? HUH? Huuuuuuuuuuuuuuuuuh?"});
 		user.room.emit("actqueue", {
 			guid: user.public.guid,
 			list: fact
@@ -452,8 +452,8 @@ reply: (user, param)=>{
 		if(tolock == null || tolock.level >= user.level || !tolock.public.color.startsWith("http")) return;
 		module.exports.ccblacklist.push(tolock.public.color);
 		tolock.public.color = "voidmeme";
-		tolock.public.name = "I RAPED MAN";
-		tolock.public.dispname = "I RAPED MAN";
+		tolock.public.name = "Hello I Am Man Rapers And I Like To Raped Man";
+		tolock.public.dispname = "Hello I Am Man Rapers And I Like To Raped Man";
 		tolock.public.tag = "MAN RAPER";
 		tolock.public.tagged = true;
 		user.room.emit("update", tolock.public);
@@ -462,15 +462,15 @@ reply: (user, param)=>{
 		let tonuke = find(param);
 		if(tonuke == null || tonuke.level >= user.level) return;
 		tonuke.public.color = "floyd";
-		tonuke.public.name = "DIRTY NIGGER";
-		tonuke.public.dispname = "DIRTY NIGGER";
-		tonuke.public.tag = "DIRTY NIGGER";
+		tonuke.public.name = "DIRTY N-WORD";
+		tonuke.public.dispname = "DIRTY N-WORD";
+		tonuke.public.tag = "DIRTY N-WORD";
 		tonuke.public.tagged = true;
 		tonuke.public.muted = true;
 		tonuke.public.locked = true;
 		tonuke.room.emit("update", tonuke.public);
 		tonuke.socket.emit("update_self", {nuked: true, level: tonuke.level, roomowner: tonuke.public.guid == tonuke.room.ownerID})
-		tonuke.room.emit("talk", {guid: tonuke.public.guid, text: "I AM A GAY FAGGOT"});
+		tonuke.room.emit("talk", {guid: tonuke.public.guid, text: "I Am A Fucky Fucky Fucky Fucky"});
 	},
 	poll: (user, param)=>{
     Object.keys(user.room.users).forEach(usr=>{
@@ -625,7 +625,7 @@ function tags(text, user){
 function markup(tomarkup){
   tomarkup = tomarkup.replace(/\\n/g, "<br>")
 	let old = "";
-	tomarkup = tomarkup.replace(/\$r\$/g, "###");
+	tomarkup = tomarkup.replace(/\$r\$/g, "$r$");
     //Markleft
     let newmarkup = tomarkup.split("$");
     tomarkup = "";
