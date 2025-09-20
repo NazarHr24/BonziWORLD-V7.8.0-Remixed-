@@ -8,15 +8,15 @@
 		[
 			{"type": 0, "text": "Wanna hear a joke?"},
 			{"type": 0, "text": "No?"},
-			{"type": 0, "text": "Then go fuck yourself."}
+			{"type": 0, "text": "Mute me Then you're a fucking problems"}
 		],
 		[{"type": 0, "text": "{NAME} used /joke. Whoop-dee-fucking doo."}],
 		[{"type": 0, "text": "HEY YOU IDIOTS ITS TIME FOR A JOKE"}],
 		[{"type": 0, "text": "Senpai {NAME} wants me to tell a joke."}],
-		[{"type": 0, "text": "Hey niggers prepare for a joke."}],
-		[{"type": 0, "text": "Prepare to be offended faggots."}],
+		[{"type": 0, "text": "Hey dude prepare for a joke."}],
+		[{"type": 0, "text": "Prepare to telling jokes"}],
 		[
-			{"type": 0, "text": "Kill yourself like a trans person, {NAME}"},
+			{"type": 0, "text": "ok, i have good one for you, {NAME}"},
 			{"type": 0, "text": "I'm not here to entertain you."}
 		],
 		[
@@ -112,7 +112,7 @@
 		],
 		[
 			{"type": 0, "text": "I like KFC, I have no water and I have huge lips. Who am I?"},
-			{"type": 0, "text": "A stinky black nigger!"},
+			{"type": 0, "text": "A stinky black retard!"},
 			{"type": 1, "anim": "shrug_back"}
 		],
 		[
@@ -132,7 +132,7 @@
 	"end": [
 		[
 			{"type": 0, "text": "You know {NAME}, a good friend laughs at your jokes even when they're not so funny."},
-			{"type": 0, "text": "And you fucking suck. Thanks."}
+			{"type": 0, "text": "And you like it. Thanks."}
 		],
 		[
 			{"type": 0, "text": "Do I amuse you, {NAME}? Am I funny? Do I make you laugh?"},
