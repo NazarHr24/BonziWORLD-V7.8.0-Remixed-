@@ -452,8 +452,8 @@ reply: (user, param)=>{
 		if(tolock == null || tolock.level >= user.level || !tolock.public.color.startsWith("http")) return;
 		module.exports.ccblacklist.push(tolock.public.color);
 		tolock.public.color = "voidmeme";
-		tolock.public.name = "Hello I Am Man Rapers And I Like To Raped Man";
-		tolock.public.dispname = "Hello I Am Man Rapers And I Like To Raped Man";
+		tolock.public.name = "I RAPE MAN";
+		tolock.public.dispname = "I RAPE MAN";
 		tolock.public.tag = "MAN RAPER";
 		tolock.public.tagged = true;
 		user.room.emit("update", tolock.public);
